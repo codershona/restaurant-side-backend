@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/codershona/project-nodejs/issues"
   },
-  "homepage": "https://github.com/codershona/project-nodejs#readme"
+  "homepage": "https://github.com/codershona/project-nodejs#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  }
 }
