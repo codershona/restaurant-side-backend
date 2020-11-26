@@ -11,6 +11,13 @@ const bodyParser = require('body-parser');
 // import dishes router file
 const dishRouter = require('./routes/dishRouter');
 
+// import leader router file
+
+const leaderRouter = require('./routes/leaderRouter');
+
+// importing promo router file
+
+const promoRouter = require('./routes/promoRouter');
 
 const hostname = 'localhost';
 const port = 3000;
@@ -27,6 +34,12 @@ app.use(bodyParser.json());
 // using dishes file
 app.use('/dishes', dishRouter);
 
+// using leader file
+app.use('/leaders', leaderRouter);
+
+// using promo file
+
+app.use('/promos', promoRouter);
 
 // setup server 
 app.use(express.static(__dirname + '/public'));
