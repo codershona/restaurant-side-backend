@@ -17,6 +17,16 @@
    * Next, move to the conFusionServer folder. cd conFusionServer/;
    * Type the following at the command prompt to install all the Node modules: npm install ;
    * Run npm start ;
-   * 
+   * Start the MongoDB server: mongod --dbpath=data --bind_ip 127.0.0.1 ;
+   * mongo ;
+   * MongoDB serve Shell:   db
+     use conFusion
+     db
+     db.help()
+
+    # Install the Node MongoDB driver and the Assert:
+
+   * npm install mongodb@3.0.10 --save;
+   * npm install assert@1.4.1 --save 
 
 ```
