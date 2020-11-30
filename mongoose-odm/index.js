@@ -9,27 +9,27 @@ connect.then((db) => {
 
     console.log('Connected correctly to server');
 
-    var newDish = Dishes({
-        name: 'Uthappizza',
-        description: 'test'
+    // Perform Database operations with Mongoose methods: Mongoose Operations
+
+       Dishes.create({
+        name: 'Uthapizza',
+        description: 'Test'
+    })
+    .then((dish) => {
+        console.log(dish);
+        
+        return Dishes.find({}).exec();
+    })
+    .then((dishes) => {
+        console.log(dishes);
+
+        return Dishes.remove({});
+    })
+    .then(() => {
+        return mongoose.connection.close();
+    })
+    .catch((err) => {
+        console.log(err);
     });
-
-    newDish.save()
-        .then((dish) => {
-            console.log(dish);
-
-            return Dishes.find({});
-        })
-        .then((dishes) => {
-            console.log(dishes);
-
-            return Dishes.remove({});
-        })
-        .then(() => {
-            return mongoose.connection.close();
-        })
-        .catch((err) => {
-            console.log(err);
-        });
 
 });
