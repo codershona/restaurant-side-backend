@@ -29,6 +29,11 @@
    * npm install mongodb@3.0.10 --save;
    * npm install assert@1.4.1 --save;
    * REST API with Express, MongoDB and Mongoose: npm install mongoose@5.1.7 mongoose-currency@0.2.0 --save;
-   * Assignment
+   * Using cookie-parser: npm install cookie-parser@1.4.3 --save'
+   * Installing express session and session file : npm install express-session@1.15.6 session-file-store@1.2.0 --save;
+
+   * Installing Passport: npm install passport@0.4.0 passport-local@1.0.0 passport-local-mongoose@5.0.1 --save;
+
+   * 
 
 ```

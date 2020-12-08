@@ -21,7 +21,9 @@
     "assert": "^1.4.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "express-session": "^1.15.6",
     "mongodb": "^3.0.10",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "session-file-store": "^1.2.0"
   }
 }
