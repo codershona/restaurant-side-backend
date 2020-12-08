@@ -29,6 +29,7 @@
    * npm install mongodb@3.0.10 --save;
    * npm install assert@1.4.1 --save;
    * REST API with Express, MongoDB and Mongoose: npm install mongoose@5.1.7 mongoose-currency@0.2.0 --save;
-   * Assignment done
+   * Using cookie-parser: npm install cookie-parser@1.4.3 --save'
+   * 
 
 ```
