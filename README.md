@@ -34,13 +34,5 @@
 
    * Installing Passport: npm install passport@0.4.0 passport-local@1.0.0 passport-local-mongoose@5.0.1 --save;
 
-   * Generating Private Key and Certificate
-   Go to the bin folder and then create the private key and certificate by typing the following at the prompt:
-
-    - openssl genrsa 1024 > private.key
-    - openssl req -new -key private.key -out cert.csr
-    -  openssl x509 -req -in cert.csr -signkey private.key -out certificate.pem
-
-   * 
 
 ```
