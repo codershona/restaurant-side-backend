@@ -26,6 +26,12 @@ var promoRouter = require('./routes/promoRouter');
 var leaderRouter = require('./routes/leaderRouter');
 
 
+// configure the new route
+
+const uploadRouter = require('./routes/uploadRouter');
+
+
+
 var config = require('./config');
 
 // Update the Express Application to connect to the MongoDB server
@@ -160,6 +166,9 @@ app.use('/users', usersRouter);
 app.use('/dishes',dishRouter);
 app.use('/promotions',promoRouter);
 app.use('/leaders',leaderRouter);
+
+
+app.use('/imageUpload',uploadRouter);
 
 
 // catch 404 and forward to error handler
